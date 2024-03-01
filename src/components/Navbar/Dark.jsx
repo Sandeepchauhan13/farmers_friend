@@ -3,14 +3,16 @@ import LightButton from "../../assets/website/light-mode-button.png";
 import DarkButton from "../../assets/website/dark-mode-button.png";
 
 const Dark = () => {
-//   const [theme, setTheme] = React.useState(
+
+  //   const [theme, setTheme] = React.useState(
+
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
   );
 
   const element = document.documentElement; // html element
 
-//   React.useEffect(() => {
+//   React.useEffect(() => { complicated syntax has been showed here 
   useEffect(() => {
     if (theme === "dark") {
       element.classList.add("dark");
@@ -20,7 +22,7 @@ const Dark = () => {
       localStorage.setItem("theme", "light");
     }
   }, [theme]);
-
+i0op
   return (
     <div className="relative">
       <img
