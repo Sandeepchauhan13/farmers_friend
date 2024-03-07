@@ -22,7 +22,7 @@ const Dark = () => {
       localStorage.setItem("theme", "light");
     }
   }, [theme]);
-i0op
+
   return (
     <div className="relative">
       <img
